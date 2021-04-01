@@ -3,9 +3,8 @@
 <!DOCTYPE html>
 <html >
 <head>
-  <meta name="google-site-verification" content="Z8bt241iSKVtPc7Jm6rvsAwAEvNC55EZISMBrOujMfI" />
   <meta charset="UTF-8">
-  <title>ML ffff</title>
+  <title>ML API</title>
 
   <style>
     /* CSS code for button */
@@ -47,42 +46,7 @@
     <form action="{{ url_for('predict')}}"method="post">
         <h1 style="color:#FFA500 "><u>Enter the value of tumor features</u></h1>
         
-    	<input type="text" name="mean_radius" placeholder="mean radius" style="border-radius: 4px" required="required" />
-        <input type="text" name="mean_texture" placeholder="mean texture" style="border-radius: 4px" required="required" />
-		<input type="text" name="mean_perimeter" placeholder="mean perimeter" style="border-radius: 4px" required="required" />
-		<input type="text" name="mean_area" placeholder="mean area" style="border-radius: 4px" required="required" />
-        <input type="text" name="mean_smoothness" placeholder="mean smoothness" style="border-radius: 4px" required="required" />
-		<input type="text" name="mean_compactness" placeholder="mean compactness" style="border-radius: 4px" required="required" />
-		<br>
-    	<input type="text" name="mean_concavity" placeholder="mean concavity" style="border-radius: 4px" required="required" />
-        <input type="text" name="mean_concave_points" placeholder="mean concave points" style="border-radius: 4px" required="required" />
-		<input type="text" name="mean_symmetry" placeholder="mean symmetry" style="border-radius: 4px" required="required" />
-    	<input type="text" name="mean_fractal_dimension" placeholder="mean fractal dimension" style="border-radius: 4px" required="required" />
-        <input type="text" name="radius_error" placeholder="radius error" style="border-radius: 4px" required="required" />
-		<input type="text" name="texture_error" placeholder="texture error" style="border-radius: 4px" required="required" />
-		<br>
-    	<input type="text" name="perimeter_error" placeholder="perimeter error" style="border-radius: 4px" required="required" />
-        <input type="text" name="area_error" placeholder="area error " style="border-radius: 4px" required="required" />
-		<input type="text" name="smoothness_error" placeholder="smoothness error" style="border-radius: 4px" required="required" />
-    	<input type="text" name="compactness_error" placeholder="compactness error" style="border-radius: 4px" required="required" />
-        <input type="text" name="concavity_error" placeholder="concavity error" style="border-radius: 4px" required="required" />
-		<input type="text" name="concave_points_error" placeholder="concave points error" style="border-radius: 4px" required="required" />
-    	<br>
-    	<input type="text" name="symmetry_error" placeholder="symmetry error" style="border-radius: 4px" required="required" />
-        <input type="text" name="fractal_dimension_error" placeholder="fractal dimension error" style="border-radius: 4px" required="required" />
-		<input type="text" name="worst_radius" placeholder="worst radius" style="border-radius: 4px" required="required" />
-    	<input type="text" name="worst_texture" placeholder="worst texture" style="border-radius: 4px" required="required" />
-        <input type="text" name="worst_perimeter" placeholder="worst perimeter" style="border-radius: 4px" required="required" />
-		<input type="text" name="worst_area" placeholder="worst area" style="border-radius: 4px" required="required" />
-		<br>
-    	<input type="text" name="worst_smoothness" placeholder="worst smoothness" style="border-radius: 4px" required="required" />
-        <input type="text" name="worst_compactness" placeholder="worst compactness" style="border-radius: 4px" required="required" />
-		<input type="text" name="worst_concavity" placeholder="worst concavity" style="border-radius: 4px" required="required" />
-    	<input type="text" name="worst_concave_points" placeholder="worst concave points" style="border-radius: 4px" required="required" />
-        <input type="text" name="worst_symmetry" placeholder="'worst symmetry" style="border-radius: 4px" required="required" />
-		<input type="text" name="worst_fractal_dimension" placeholder="worst fractal dimension" style="border-radius: 4px" required="required" />
-        <br>
-        <br>
+    	
         
         <!-- Show button -->
         <div class="button_cont" align="center">
@@ -92,12 +56,6 @@
     </form>
     </center>
    
-   <!-- Show predicted output using ML model --> 
-   <div>
-       <center>
-   <h1 style="color:#FFA500 ">{{ prediction_text }}</h1>
-       </center>
-   </div>
 
  </div>
 
